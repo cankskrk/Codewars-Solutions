@@ -1,8 +1,14 @@
 const sumStrings = (a, b) => {
-  a = Number(a);
-  b = Number(b);
+  if (!a) {
+    a = 0;
+  }
 
-  return console.log(String(a + b));
+  if (!b) {
+    b = 0;
+  }
+
+  let total = +a + +b;
+  return console.log(String(total));
 };
 
 sumStrings(250, 200);
